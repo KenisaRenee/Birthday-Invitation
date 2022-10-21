@@ -228,6 +228,10 @@ p {
         max-height: fit-content;
     }
 
+    .hero-img img {
+        object-fit: cover;
+    }
+
     .hero-text {
         max-width: 100%;
         margin: 0;
