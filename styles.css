@@ -60,8 +60,7 @@ section {
 img {
     display: block;
     max-width: 100%;
-    min-height: fit-content;
-    height: auto;
+    min-height: min-content;
 }
 
 h1 {
@@ -83,10 +82,8 @@ p {
 
 .hero {
     min-height: 100vh;
-    gap: 7rem;
     display: flex;
     align-items: center;
-    margin-top: -1rem;
 }
 
 
@@ -109,14 +106,12 @@ p {
 .hero-img {
     background: white;
     display: inline-block;
-    margin: 4rem 4.5rem 3rem;
+    margin: 0 auto;
     padding: 1.5rem 1.5rem 3rem;
     text-align: center;
     text-decoration: none;
     box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, .3);
     position: relative;
-    max-width: 50%;
-    min-width: 25rem;
   }
 
   figcaption {
@@ -223,7 +218,7 @@ p {
         padding: 0 5rem;
     }
     .hero-img {
-        margin-bottom: -3rem;
+        margin: 3rem 0;
         max-width: fit-content;
         max-height: fit-content;
     }
@@ -262,6 +257,8 @@ p {
         margin: 3% 0;
         padding: 0;
         overflow: hidden;
+        display: flex;
+        justify-content: center;
     }
 
 }
