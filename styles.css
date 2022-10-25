@@ -60,7 +60,6 @@ section {
 img {
     display: block;
     max-width: 100%;
-    min-height: min-content;
 }
 
 h1 {
@@ -105,13 +104,11 @@ p {
 
 .hero-img {
     background: white;
-    display: inline-block;
-    margin: 0 auto;
     padding: 1.5rem 1.5rem 3rem;
     text-align: center;
     text-decoration: none;
     box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, .3);
-    position: relative;
+    margin: 0 auto;
   }
 
   figcaption {
@@ -125,7 +122,6 @@ p {
   }
 
   .hero-img img {
-    display: block;
     width: 25rem;
   }
 
