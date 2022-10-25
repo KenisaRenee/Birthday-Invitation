@@ -1,85 +1,250 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <title>Athena's Party Invitation</title>
-  <link rel="stylesheet" href="styles.css" class="rel">
-</head>
-<body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#RSVP" class="href">RSVP</a></li>
-        <li><a href="#Details" class="href">Details</a></li>
-      </ul>
-    </nav>
-  </header>
- 
+@import url('https://fonts.googleapis.com/css2?family=Caesar+Dressing&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&family=Homemade+Apple&display=swap');
 
-<main>
+:root {
+    --green: #383f37dc;
+    --gold: #ad7921;
+    --light-blue: #c0d3ea;
+    --cream: #edf2f1;
+    --brown: #815306;
+    --red: #86282e;
+    --sky-blue: #5e92cf;
+}
 
-  <!--Start of Hero-->
-  <section class="hero">
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 1.2px;
+} 
+
+header {
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2rem 10rem 0 10rem;
+    color: var(--gold);
+    font-size: 3.5rem;
+    background-color: transparent;
+    font-family: 'Caesar Dressing', cursive;
     
-    <div class="hero-text">
-      <h1>Athena</h1> <h1>is turning 1!</h1>
-      <p class="hero-description">And you're invited to come celebrate with us on Saturday, November 26th.</p>
-    </div>
-  
-  <figure class="hero-img">
-  <img src="./images/DSC01433.JPG" alt="">
-  <figcaption>It's my birthday!</figcaption>
-  </figure>
-  </section>
-  <!--End of Hero-->
-  
-<!--Start of Section 2-->
-<section class="two" id="Details">
-  <figure class="two-img">
-    <img src="./images/DSC01420.JPG" alt="">
-    </figure>
-  <div class="two-text">
-    <h1>Here's what you need to know...</h1>
-    <p class="two-p">The shindig will be held at our house. If you need the address, just text and ask.</p>
-    <p>Bring your family and join ours for lunch from 12-3pm while we spend the afternoon hanging out, playing games, and eating good food.</p>
-    <div class="info-link">  
-    <p class="gift">Wanna get the little girl a gift but don't know what the <i>heck</i> to get a one year old?</p>
-      
-        <a class="link" href="https://www.amazon.com/hz/wishlist/ls/SPO163VD6N7K/ref=nav_wishlist_lists_2" target="_blank">
-        
-        I got you.</a>
-      
-    </div>
-      
-          
-    </div>
-      </div>
+}
 
-</section>
+nav a {
+    color: var(--gold);
+    text-shadow: 2px 2px var(--brown);
+}
 
-<!--End of Section 2-->
+nav a:hover {
+    opacity: .7;
+}
 
-<!--Start of Section 3-->
-<section class="three">
-  <div class="three-text">
-    <h1>So can you make it?</h1>
-    <p id="RSVP">We need to know how many people we'll be feeding, so please RSVP by Friday, November 18th.</p>
-  </div>
-  <div class="form">
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdxqPaq3P-UTFiN7aqBQoHy7ibtHZG8YcfxpDTqRjGFL-JlyQ/viewform?embedded=true" width="640" height="830" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>  
-  </div>
-</section>
-<!--End of Section 3-->
-</main>
-<!--Start of Footer-->
-<footer class="four">
-  
-</footer>
-<!--End of Footer-->
+body {
+    background: linear-gradient(0deg, var(--light-blue) 0%, var(--cream) 100%);
+    line-height: 1.4;
+}
+
+section {
+    padding: 0 10rem;
+    margin: 5% auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+h1 {
+    font-family: 'Caesar Dressing', cursive;
+    font-weight: bold;
+    color: var(--sky-blue);
+    font-size: 4.5rem;
+    text-shadow: 2px 2px var(--gold);
+    text-align: center;
+}
+
+p {
+    font-family: 'Alegreya Sans SC', sans-serif;
+    color: var(--brown);
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
 
 
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 50%;
+}
 
-</body>
-</html>
+.hero-text h1 {
+    padding-bottom: 1.5rem;
+}
+
+.hero-description {
+    padding-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.hero-img {
+    background: white;
+    padding: 1.5rem 1.5rem 3rem;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, .3);
+    margin: 0 auto;
+  }
+
+  figcaption {
+    color: var(--brown);
+    font-size: 1.6rem;
+    position: relative;
+    top: 2rem;
+    font-weight: bold;
+    font-family: 'Homemade Apple', cursive;
+    margin-bottom: .5rem;
+  }
+
+  .hero-img img {
+    width: 25rem;
+  }
+
+.two {
+    align-items: center;
+    text-align: center;
+    gap: 10rem;
+}
+
+.two h1 {
+    padding-bottom: 1rem;
+}
+
+.two-img img {
+    border: .2rem solid var(--gold);
+    object-fit: contain;
+    border-radius: 2rem;
+    box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, .3);
+}
+
+.two-p {
+    padding-bottom: 1rem;
+}
+
+.info-link {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 1.6rem;
+    padding-bottom: .3rem;
+    max-width: max-content;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    align-items: center;
+    color: var(--gold);
+    font-weight: bold;
+}
+
+.gift {
+    font-size: 2rem;
+}
+
+.link {
+    font-family: 'Homemade Apple', cursive;
+    font-weight: bold;
+    color: var(--red);
+    padding: 1.2rem 3rem 1rem 3rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    cursor: pointer;
+    border: 2px solid var(--red);
+    margin-top: 1rem;
+    
+}
+
+.link:hover {
+    transform: scale(1.1);
+    transition: ease-in-out .3s;
+    color: var(--gold);
+    border: 2px solid var(--gold);
+}
+
+.three {
+    padding-bottom: 6rem;
+    display: block;
+    margin: 0 auto;
+}
+
+
+.three-text h1 {
+    padding-bottom: 2rem;
+}
+
+.form {
+    text-align: center;
+    margin-top: 3%;
+}
+
+@media only screen and (max-width: 1393px) {
+    nav ul li {
+        font-size: 2.3rem;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 2rem;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 0 3rem;
+    }
+
+    .hero-img {
+        margin: 3rem 0;
+    }
+
+    .hero-text {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .hero-text p {
+        margin-bottom: 4rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+        padding: 0;
+        margin: 0;
+    }
+
+    p {
+        font-size: 1.3rem;
+        padding-top: 1rem;
+    }
+
+    .form {
+        padding: 0;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        min-height: max-content;
+        margin: 03% -2rem;
+    }
+}
