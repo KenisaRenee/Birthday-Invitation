@@ -239,6 +239,11 @@ p {
         padding-top: 1rem;
     }
 
+    .two-img {
+        margin-bottom: 2rem;
+        margin-top: -2rem;
+    }
+
     .form {
         padding: 0;
         overflow: hidden;
