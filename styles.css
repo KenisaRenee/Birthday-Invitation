@@ -208,11 +208,13 @@ p {
         justify-content: space-between;
         margin: 0 2rem;
     }
+    
     section {
         display: flex;
         flex-direction: column-reverse;
-        padding: 0 5rem;
+        padding: 0 3rem;
     }
+
     .hero-img {
         margin: 3rem 0;
     }
