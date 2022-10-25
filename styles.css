@@ -238,13 +238,13 @@ p {
         font-size: 1.3rem;
         padding-top: 1rem;
     }
-    
+
     .form {
-        margin: 3% 0;
         padding: 0;
         overflow: hidden;
         display: flex;
         justify-content: center;
+        min-height: max-content;
+        margin: 03% -2rem;
     }
-
 }
