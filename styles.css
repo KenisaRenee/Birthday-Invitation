@@ -241,7 +241,7 @@ p {
 
     .form {
         margin: 3% 0;
-        padding: -1rem;
+        padding: 0 -2rem;
         overflow: hidden;
         display: flex;
         justify-content: center;
