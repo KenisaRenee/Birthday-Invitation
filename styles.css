@@ -28,7 +28,7 @@ nav ul {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding: 3rem 10rem 0 10rem;
+    padding: 2rem 10rem 0 10rem;
     color: var(--gold);
     font-size: 3.5rem;
     background-color: transparent;
@@ -208,7 +208,7 @@ p {
         justify-content: space-between;
         margin: 0 2rem;
     }
-    
+
     section {
         display: flex;
         flex-direction: column-reverse;
